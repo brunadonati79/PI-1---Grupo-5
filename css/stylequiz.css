@@ -158,7 +158,7 @@ input[type="radio"] {
 
 /* Footer */
 .rodapé {
-    margin-top: 150vh;
+    margin-top: 10vh;
     background-color: var(--azulmeioescuro); 
     color: white;
     display: flex;
