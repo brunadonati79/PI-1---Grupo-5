@@ -19,7 +19,7 @@
   
   body {
       background-color: var(--fundo);
-      overflow-x: hidden;
+      overflow-x: hidden;      
   }
   .banner {
       position: relative;
