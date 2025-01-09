@@ -535,6 +535,11 @@
     transition: background-color 0.3s;
     margin-top: 5%;
   }
+
+  .quiz-card .botaoquiz a{
+    text-decoration: none;
+    color: #f1f0f0;
+  }
   
   .quiz-card button:hover {
     background-color: #8d9aa2;
