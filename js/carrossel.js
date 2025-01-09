@@ -16,23 +16,21 @@ function loadShow() {
         if (offset === 0) {
             // Item ativo
             item.style.transform = 'translateX(0) scale(1) perspective(1000px) rotateY(0deg)';
-            item.style.opacity = '1';
-            item.style.zIndex = '2';
+            item.style.opacity = 1;
+            item.style.zIndex = 2;
             item.style.filter = 'none';
         } else if (offset === 1 || offset === items.length - 1) {
             // Itens próximos ao ativo
             let direction = offset === 1 ? 1 : -1;
             item.style.transform = `translateX(${direction * spacing}px) scale(0.8) perspective(1000px) rotateY(${direction * -rotationAngle}deg)`;
-            item.style.opacity = '0.6';
-            item.style.zIndex = '1';
-            item.style.filter = `blur(${blurAmount}px)`;
+            item.style.opacity = 0.6;
+            item.style.zIndex = 1;
         } else {
             // Itens mais distantes
             let direction = offset > 1 ? 1 : -1;
             item.style.transform = `translateX(${direction * spacing * offset}px) scale(${1 - scaleFactor * offset}) perspective(1000px) rotateY(${direction * -rotationAngle}deg)`;
-            item.style.opacity = '0';
-            item.style.zIndex = '0';
-            item.style.filter = `blur(${blurAmount}px)`;
+            item.style.opacity = 0;
+            item.style.zIndex = 0;
         }
     });
 }
